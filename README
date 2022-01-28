@@ -1,0 +1,10 @@
+Start with gitWRAExample.m. 
+It uses functions for the following tasks. 
+gitWRAio.xlsx is the output file for this program. Make sure the path provided in the code is changed to appropriate location based on your system path. 
+The code can be use to perform 
+\item Weibull distribution simulation.
+\item Extrapolation using power law. 
+\item Frequency distribution. 
+\item Parameter estimation using traditional methods.
+Use the choices judiciously for your requirement. 
+Feel free to contact me in case of any doubts. 
