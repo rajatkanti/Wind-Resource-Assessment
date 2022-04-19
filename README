@@ -12,3 +12,14 @@ The following scripts can be used for various purposes as mentioned.
 gitWRApowerEn.m is used for computing power and energy output. 
 gitPlotTPI.m is used for plotting Turbine Performance Index
 gitWindRose.m plots wind rose diagram 
+
+
+The following code files can be used for probability distribution fitting using MATLAB Statistics Toolbox.
+gitWpdAnalysis.m: Obtain basic statistical parameters of Wind data
+gitWpdFitDistScpt.m: script file for using distribution fitting functions
+gitWpdFreqDistFn.m: Obtain frequency distribution of wind speed time series
+niweHourly.m: Converts NIWE 10-min wind speed to hourly/daily averages
+niweFitDistFn.m: Fits marginal distributions to wind speed time series
+niweFitDistMixFn.m: Fits mixture distributions wind speed time series
+niweGOFfn.m: Performs goodness of fit tests for marginal distribution fitting
+niweGOFmixfn.m: Performs goodness of fit tests for mixture distribution fitting
