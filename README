@@ -8,7 +8,7 @@ The code can be use to perform
 \item Parameter estimation using traditional methods.
 Use the choices judiciously for your requirement. 
 
-The following scripts can be used for various purposes as mentioned. 
+Power, Energy and Turbine Performance Index:
 gitWRApowerEn.m is used for computing power and energy output. 
 gitPlotTPI.m is used for plotting Turbine Performance Index
 gitWindRose.m plots wind rose diagram 
@@ -23,3 +23,32 @@ niweFitDistFn.m: Fits marginal distributions to wind speed time series
 niweFitDistMixFn.m: Fits mixture distributions wind speed time series
 niweGOFfn.m: Performs goodness of fit tests for marginal distribution fitting
 niweGOFmixfn.m: Performs goodness of fit tests for mixture distribution fitting
+vwsHourlyW.m: Converts 5/10-min average weather variables to hourly/daily averages
+
+
+PLOTTING fitted Probability Distributions:
+niwePlotDistScpt.m: for plotting histogram and probability distributions
+niwePlotDistYfn.m: for plotting marginal distributions for year
+niwePlotDistMfn.m: for plotting probability distributions for months
+niwePlotDistSfn.m: for plotting probability distributions for seasons
+niwePlotDistS2fn.m: four seasons in a plot (best fit distributions)
+
+Working with Reanalysis data:
+ProcedureMERRA.txt: Procedure to download MERRA-2 data for a specific location
+reDataConvN.m: Formats Reanalysis wind speed data
+reDataConvWniwe.m: Formats Reanalysis weather variable data
+reDataPrep.m: Data preparation for Weibull parameter estimation
+reDataPrepMon.m: Data preparation (months)
+reDataPrepS.m: Data preparation (seasons)
+
+
+Error Analysis (Reanalysis and measured data):
+reCorr.m: Finding correlation between Reanalysis and Measured Data
+reCorrW.m: Correlation between weather variables
+rePlotCorr.m: plots measured-reanalysis correlation across months
+reRegPlotfn.m: plots the regression plot
+reErr.m: Obtains error measures for comparison between reanalysis and measured data
+reERRfn.m: Computes MBE, MAE, RMSE
+rePlotErr.m: Plots error measures between reanalysis and measured data
+rePlotErrBar.m: Plots error measures as bar charts
+
