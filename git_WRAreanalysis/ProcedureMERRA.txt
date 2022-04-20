@@ -1,0 +1,33 @@
+URL for data info: (for reference)
+https://goldsmr4.gesdisc.eosdis.nasa.gov/dods/M2T1NXSLV.info
+
+Open cmd. Type grads. Use sdfopen to open the above file. (Not used)
+
+Open OpenGrADS software. 
+
+sdfopen C:\Users\Rajat\Documents\MERRA\MERRA2_100.tavg1_2d_slv_Nx.19800101.nc4.nc
+sdfopen C:\Users\Rajat\Documents\MATLAB\IOFiles\MERRAio\MERRA2_100.tavg1_2d_slv_Nx.19800101.nc4.nc
+
+set time 00:30Z01Mar2013. Use q dims to obtain T=290713.
+
+set time 23:30Z28Feb2014. Use q dims to obtain T=332376.
+
+set lon 83.98
+set lat 21.47
+
+q dims provides relative measure with respect to available lon and lat. 
+
+ ix = ( -103.20 + 180. )/0.625 + 1 = 124  
+
+ iy = ( 46.05 + 90. )/0.5 + 1 = 273  
+
+for Sambalpur, calculate coordinates using merra.m, the Octave file.
+ix =  423.37
+iy =  223.92
+
+cd C:\Users\RAJAT\Documents\MATLAB\IOFiles\MERRAio\Raw
+
+
+C:\wget-1.18-win64\wget --user=rksamalEE --password=Kanti@789 https://goldsmr4.gesdisc.eosdis.nasa.gov/dods/M2T1NXSLV.ascii?t10m[290713:299472][221][427] -O t10m.asc
+
+F:\SOFTWARE\WGET\wget --user=rksamalEE --password=Kanti@789 https://goldsmr4.gesdisc.eosdis.nasa.gov/dods/M2T1NXSLV.ascii?qv10m[290713:299472][221][427] -O qv10m.asc
